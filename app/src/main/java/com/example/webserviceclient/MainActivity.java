@@ -29,4 +29,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openRandomNameAPIActivity(View view) {
+        Intent intent = new Intent(this, RandomNameAPIActivity.class);
+        startActivity(intent);
+    }
+
 }

@@ -13,4 +13,6 @@
     <string name="randomadviceAPIButton">Generate random advice</string>
     <string name="networkError">Please check your internet connection.</string>
     <string name="searchInputEmpty">No search term provided.</string>
+    <string name="mainActivityRandomNameButton">Random names</string>
+    <string name="randomnameAPIButton">Generate random name</string>
 </resources>
