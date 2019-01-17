@@ -31,7 +31,7 @@ public class NameDaysAPIActivity extends AppCompatActivity {
     {
 
         InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-        inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
+        inputManager.hideSoftInputFromWindow(view.getWindowToken(),
                 InputMethodManager.HIDE_NOT_ALWAYS);
 
         ConnectivityManager connectivityManager = (ConnectivityManager)
@@ -44,7 +44,7 @@ public class NameDaysAPIActivity extends AppCompatActivity {
         }
         else
         {
-            getNamedaysResultTextView.setText("Please check your internet connection.");
+            getNamedaysResultTextView.setText(R.string.networkError);
         }
     }
 
@@ -52,7 +52,7 @@ public class NameDaysAPIActivity extends AppCompatActivity {
     {
         String queryString = searchNamedaysEditText.getText().toString();
         InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-        inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
+        inputManager.hideSoftInputFromWindow(view.getWindowToken(),
                 InputMethodManager.HIDE_NOT_ALWAYS);
 
         ConnectivityManager connectivityManager = (ConnectivityManager)
@@ -65,7 +65,7 @@ public class NameDaysAPIActivity extends AppCompatActivity {
         }
         else
         {
-            searchNamedaysResultTextView.setText("Please check your internet connection.");
+            searchNamedaysResultTextView.setText(R.string.networkError);
         }
     }
 }

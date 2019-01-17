@@ -23,4 +23,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, NameDaysAPIActivity.class);
         startActivity(intent);
     }
+
+    public void openRandomAdviceAPIActivity(View view) {
+        Intent intent = new Intent(this, RandomAdviceAPIActivity.class);
+        startActivity(intent);
+    }
+
 }

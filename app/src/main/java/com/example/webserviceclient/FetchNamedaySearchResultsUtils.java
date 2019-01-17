@@ -29,7 +29,7 @@ public class FetchNamedaySearchResultsUtils {
             Log.e(TAG, "exception", e);
             return null;
         }
-        return JSONStringHandler.getJSONFromURLWithGET(requestURL);
+        return URLJSONExtractor.getJSONFromURLWithGET(requestURL);
     }
 }
 

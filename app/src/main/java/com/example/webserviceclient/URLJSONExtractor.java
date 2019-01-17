@@ -8,10 +8,10 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class JSONStringHandler {
+public class URLJSONExtractor {
     private static final String TAG = FetchTodaysNamedaysUtils.class.getSimpleName();
 
-    private JSONStringHandler() {
+    private URLJSONExtractor() {
         throw new IllegalStateException("Utility class");
     }
 

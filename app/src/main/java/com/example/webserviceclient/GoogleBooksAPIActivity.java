@@ -29,7 +29,7 @@ public class GoogleBooksAPIActivity extends AppCompatActivity {
         String queryString = bookInput.getText().toString();
         // hiding keyboard if the search button is pressed
         InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-        inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
+        inputManager.hideSoftInputFromWindow(view.getWindowToken(),
                 InputMethodManager.HIDE_NOT_ALWAYS);
 
         ConnectivityManager connectivityManager = (ConnectivityManager)
@@ -43,10 +43,10 @@ public class GoogleBooksAPIActivity extends AppCompatActivity {
         } else {
             if(queryString.length() == 0) {
                 authorText.setText("");
-                titleText.setText("No search term provided.");
+                titleText.setText(getString(R.string.searchInputEmpty));
             } else {
                 authorText.setText("");
-                titleText.setText("Please check your network connection.");
+                titleText.setText(R.string.networkError);
             }
         }
     }

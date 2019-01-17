@@ -6,18 +6,16 @@ import android.util.Log;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class FetchTodaysNamedaysUtils {
+public class FetchRandomAdviceUtils {
     private static final String TAG = FetchTodaysNamedaysUtils.class.getSimpleName();
-    private static final String NAMEDAYS_BASE_URL = "https://api.abalin.net/get/today?";
-    private static final String NAMEDAYS_COUNTRY = "country";
+    private static final String RANDOMADVICE_BASE_URL = "https://api.adviceslip.com/advice";
 
-    private FetchTodaysNamedaysUtils() {
+    private FetchRandomAdviceUtils() {
         throw new IllegalStateException("Utility class");
     }
 
-    static String getTodaysNamedays() {
-        Uri builtUri = Uri.parse(NAMEDAYS_BASE_URL).buildUpon()
-                .appendQueryParameter(NAMEDAYS_COUNTRY, "pl")
+    static String getRandomAdvice() {
+        Uri builtUri = Uri.parse(RANDOMADVICE_BASE_URL).buildUpon()
                 .build();
 
         URL requestURL = null;

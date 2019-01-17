@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".GoogleBooksAPIActivity" />
-        <activity android:name=".NameDaysAPIActivity"></activity>
+        <activity android:name=".NameDaysAPIActivity" />
+        <activity android:name=".RandomAdviceAPIActivity"></activity>
     </application>
 
 </manifest>

@@ -9,4 +9,8 @@
     <string name="nameDaysAPISearchInfo">Enter a name and push the button to find out on what dates it celebrates a nameday.</string>
     <string name="nameDaysAPISearchButtonHint">Enter name here</string>
     <string name="mainActivityNamedaysButton">Namedays</string>
+    <string name="mainActivityRandomAdviceButton">Random advice</string>
+    <string name="randomadviceAPIButton">Generate random advice</string>
+    <string name="networkError">Please check your internet connection.</string>
+    <string name="searchInputEmpty">No search term provided.</string>
 </resources>
