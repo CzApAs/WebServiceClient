@@ -1,8 +1,10 @@
-package com.example.webserviceclient;
+package com.example.webserviceclient.randomadvice;
 
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.TextView;
+
+import com.example.webserviceclient.namedays.FetchTodaysNamedays;
 
 import org.json.JSONObject;
 

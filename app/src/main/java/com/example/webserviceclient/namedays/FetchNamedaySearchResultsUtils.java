@@ -1,7 +1,9 @@
-package com.example.webserviceclient;
+package com.example.webserviceclient.namedays;
 
 import android.net.Uri;
 import android.util.Log;
+
+import com.example.webserviceclient.URLJSONExtractor;
 
 import java.net.MalformedURLException;
 import java.net.URL;

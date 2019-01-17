@@ -1,4 +1,4 @@
-package com.example.webserviceclient;
+package com.example.webserviceclient.namedays;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.webserviceclient.R;
 
 public class NameDaysAPIActivity extends AppCompatActivity {
     private TextView getNamedaysResultTextView;

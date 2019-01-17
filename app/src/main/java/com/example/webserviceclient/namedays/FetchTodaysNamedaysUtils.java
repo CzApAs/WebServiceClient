@@ -1,21 +1,25 @@
-package com.example.webserviceclient;
+package com.example.webserviceclient.namedays;
 
 import android.net.Uri;
 import android.util.Log;
 
+import com.example.webserviceclient.URLJSONExtractor;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class FetchRandomAdviceUtils {
+public class FetchTodaysNamedaysUtils {
     private static final String TAG = FetchTodaysNamedaysUtils.class.getSimpleName();
-    private static final String RANDOMADVICE_BASE_URL = "https://api.adviceslip.com/advice";
+    private static final String NAMEDAYS_BASE_URL = "https://api.abalin.net/get/today?";
+    private static final String NAMEDAYS_COUNTRY = "country";
 
-    private FetchRandomAdviceUtils() {
+    private FetchTodaysNamedaysUtils() {
         throw new IllegalStateException("Utility class");
     }
 
-    static String getRandomAdvice() {
-        Uri builtUri = Uri.parse(RANDOMADVICE_BASE_URL).buildUpon()
+    static String getTodaysNamedays() {
+        Uri builtUri = Uri.parse(NAMEDAYS_BASE_URL).buildUpon()
+                .appendQueryParameter(NAMEDAYS_COUNTRY, "pl")
                 .build();
 
         URL requestURL = null;

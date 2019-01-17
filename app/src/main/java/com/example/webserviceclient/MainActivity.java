@@ -5,6 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.webserviceclient.books.GoogleBooksAPIActivity;
+import com.example.webserviceclient.namedays.NameDaysAPIActivity;
+import com.example.webserviceclient.randomadvice.RandomAdviceAPIActivity;
+import com.example.webserviceclient.randomnames.RandomNameAPIActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

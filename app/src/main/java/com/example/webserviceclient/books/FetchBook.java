@@ -1,4 +1,4 @@
-package com.example.webserviceclient;
+package com.example.webserviceclient.books;
 
 import android.os.AsyncTask;
 import android.util.Log;
