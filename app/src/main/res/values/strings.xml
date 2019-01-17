@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WebServiceClient</string>
+    <string name="googleBookApiButton">Book search</string>
+    <string name="googleBookApiTextView">Type in a title or its portion to find a book and the author.</string>
+    <string name="googleBookApiEditTextInput">Enter title here...</string>
+    <string name="googleBookApiSearchButton">Begin search</string>
+    <string name="loading">Loading...</string>
+    <string name="nameDaysAPIGetTodayButton">Push the button to find out today\'s namedays in Poland.</string>
+    <string name="nameDaysAPISearchInfo">Enter a name and push the button to find out on what dates it celebrates a nameday.</string>
+    <string name="nameDaysAPISearchButtonHint">Enter name here</string>
+    <string name="mainActivityNamedaysButton">Namedays</string>
+</resources>
